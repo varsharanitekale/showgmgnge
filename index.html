@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #main{
+            width:80%;
+            height:50vh;
+            box-shadow: 0px 0px 10px black;
+            text-align: center; 
+            margin:100px 0px 0px 90px;
+            background-color: rgba( 145, 123, 123, 3.1);
+            opacity:1px;
+
+        }
+        #sub_main{
+            margin-left:400px;
+            font-size: 20px;
+        }
+        
+        button{
+            margin:100px 0px 0px 170px;
+         position: relative; 
+         box-shadow: 0px 0px 10px black;
+         background-color: silver;
+         border-radius: 30px;
+        }
+        p{
+            color:white;
+        }
+
+    </style>
+    <script>
+        function morning(){
+            var fmorn=document.getElementById("p");
+            fmorn.innerText="Good Morning!  ";
+            fmorn.style.color="blue";
+            var stylemorn=document.getElementById("p1");
+            stylemorn.style.color="yellow"
+
+        }
+        function afternoon(){
+            var fmorn=document.getElementById("p")
+            fmorn.innerText="Good Afternoon!  ";
+
+        }
+        function night(){
+            var fmorn=document.getElementById("p")
+            fmorn.innerText="Good Night!  ";
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <div id="main">
+        <table id=sub_main>
+            <tr>
+                <td>
+        <p id="p">
+
+        </p>
+    </td>
+    <td>
+        <p id="p1"> Varsharani Tekale</p>
+    </td>
+
+    </tr>
+</table>
+
+        <table>
+            <tr>
+                <td>
+                    <button  id ="btn1" onclick="morning()"> Good Morning</button>
+
+                </td>
+                <td>
+                 <button id="btn2" onclick="afternoon()"> Good Afternoon</button>
+                </td>
+                <td>
+                  <button  id= "btn3" onclick="night()"> Good Night</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
